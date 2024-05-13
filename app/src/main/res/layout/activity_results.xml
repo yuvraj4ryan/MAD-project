@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:background="@drawable/resultsbg">
+
+    <!-- Welcome Heading -->
+    <TextView
+        android:id="@+id/welcomeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:background="@color/darkblue"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Goal GPA Input -->
+    <EditText
+        android:id="@+id/editTextDesiredGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Goal GPA"
+        android:inputType="numberDecimal"
+        android:textColor="#63C819"
+        android:textSize="16sp"
+        android:backgroundTint="@color/colorPrimary1"
+        android:layout_below="@id/welcomeHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Marks Table -->
+    <TableLayout
+        android:id="@+id/marksTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDesiredGrade"
+        android:layout_marginTop="24dp">
+
+        <!-- Table Header -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subject"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ICA "
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Marks"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <!-- Subject 1 -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Subject 1"
+                android:text="SQA"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject1ICA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="40"
+                android:inputType="number"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject1PredictedMarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="76"
+                android:inputType="number"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <!-- Subject 2 -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Subject 2"
+                android:text="DBA"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject2ICA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="43"
+                android:inputType="number"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject2PredictedMarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="92"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <!-- Subject 3 -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Subject 3"
+                android:text="MLA"
+
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject3ICA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="41"
+                android:inputType="number"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject3PredictedMarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="88"
+                android:inputType="number"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <!-- Subject 4 -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Subject 4"
+                android:text="RPA"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject4ICA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="47"
+                android:inputType="number"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject4PredictedMarks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:text="74"
+                android:inputType="number"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <!-- Subject 5 -->
+        <TableRow>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Subject 5"
+                android:text="LTLS"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject5ICA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="42"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/subject5PredictedMarks"
+                android:layout_width="0dp"
+                android:text="84"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:inputType="number"
+                android:textSize="16sp"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE GPA "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/marksTable"
+        android:backgroundTint="@color/darkblue"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- GPA Label -->
+    <TextView
+        android:id="@+id/textViewGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Calculated GPA: 0.0"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <!-- Marks Lost Label -->
+    <TextView
+        android:id="@+id/textViewMarksLost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGPA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Marks Lost Overall: 0"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <!-- Marks Required Label -->
+    <TextView
+        android:id="@+id/textViewMarksRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMarksLost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Marks Required for Goal GPA : 0"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/darkblue"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

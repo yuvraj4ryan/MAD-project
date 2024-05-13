@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_assignment"
+    >
+
+
+
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/headerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkblue"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSIGNMENTS"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:backgroundTint="@color/darkblue"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/TextSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerSection"
+
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit your assignments!"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:backgroundTint="@color/darkblue"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <!-- Subject 1 Section -->
+    <RelativeLayout
+        android:id="@+id/subject1Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerSection"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/subject1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Subject 1"
+            android:text="SQA :"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/subject1RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subject1TextView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subject1YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yes"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/subject1NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="No"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- SHARE PDF
+ Button for Subject 1 -->
+        <Button
+            android:id="@+id/uploadSubject1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="onSharePDF"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="SHARE PDF"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Subject 2 Section -->
+    <RelativeLayout
+        android:id="@+id/subject2Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject1Section"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/subject2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Subject 2"
+            android:text="DBA :"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/subject2RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subject2TextView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subject2YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yes"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/subject2NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="No"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- SHARE PDF
+ Button for Subject 2 -->
+        <Button
+            android:id="@+id/uploadSubject2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:onClick="onSharePDF"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="SHARE PDF
+"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Subject 3 Section -->
+    <RelativeLayout
+        android:id="@+id/subject3Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject2Section"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/subject3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Subject 3"
+            android:text="MLA"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/subject3RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subject3TextView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subject3YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yes"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/subject3NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="No"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- SHARE PDF
+ Button for Subject 3 -->
+        <Button
+            android:id="@+id/uploadSubject3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:elevation="4dp"
+            android:onClick="onSharePDF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="SHARE PDF
+"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!-- Subject 5 Section -->
+    <RelativeLayout
+        android:id="@+id/subject4Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject3Section"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/subject4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Subject 4"
+            android:text="RPA :"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/subject4RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subject4TextView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subject4YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yes"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/subject4NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="No"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- SHARE PDF
+ Button for Subject 4 -->
+        <Button
+            android:id="@+id/uploadSubject4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:onClick="onSharePDF"
+
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="SHARE PDF
+"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subject5Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject4Section"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/subject5TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Subject 5"
+            android:text="LTLS :"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/subject5RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subject5TextView"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/subject5YesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yes"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/subject5NoRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="No"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- SHARE PDF
+ Button for Subject 5 -->
+        <Button
+            android:id="@+id/uploadSubject5Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/darkblue"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:onClick="onSharePDF"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="SHARE PDF"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- Button for tracking weekly assignments -->
+    <Button
+        android:id="@+id/trackAssignmentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject5Section"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Track Weekly AssignmentS"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/darkblue"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="12dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="100dp"
+        android:text="Back"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:onClick="onBackButtonClicked" />
+
+</RelativeLayout>

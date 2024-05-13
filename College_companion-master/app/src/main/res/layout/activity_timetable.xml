@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resultsbg"
+    android:padding="16dp">
+
+    <!-- Attendance Header -->
+    <TextView
+        android:id="@+id/textViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATTENDANCE"
+        android:background="@color/black"
+        android:backgroundTint="#45E44C"
+        android:textSize="24sp"
+        android:textColor="#5971F4"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Attendance Table -->
+    <TableLayout
+        android:id="@+id/attendanceTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <!-- Table Header -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Percentage"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Miss More"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </TableRow>
+
+        <!-- Subject 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextSubject1Attendance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:text="18/20" />
+
+            <EditText
+                android:id="@+id/editTextSubject1Percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="90.0" />
+
+            <EditText
+                android:id="@+id/editTextSubject1MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="0" />
+        </TableRow>
+
+        <!-- Subject 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 2"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextSubject2Attendance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:text="14/20" />
+
+            <EditText
+                android:id="@+id/editTextSubject2Percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="70.0" />
+
+            <EditText
+                android:id="@+id/editTextSubject2MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="6" />
+        </TableRow>
+
+        <!-- Subject 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 3"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextSubject3Attendance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:text="16/20" />
+
+            <EditText
+                android:id="@+id/editTextSubject3Percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="80.0" />
+
+            <EditText
+                android:id="@+id/editTextSubject3MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"
+                android:focusable="false"
+                android:text="4" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Recalculate Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recalculate"
+        android:layout_below="@id/attendanceTable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:onClick="onRecalculateClick" />
+</RelativeLayout>

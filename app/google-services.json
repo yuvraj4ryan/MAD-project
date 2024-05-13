@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1026946208949",
+    "firebase_url": "https://campus-companion-11d6b-default-rtdb.firebaseio.com",
+    "project_id": "campus-companion-11d6b",
+    "storage_bucket": "campus-companion-11d6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026946208949:android:e5c6004e6f37ce26d21afc",
+        "android_client_info": {
+          "package_name": "com.example.college_companion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1oQFaZ4GSxZjgOK7d34bBer2-Hi-YKJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

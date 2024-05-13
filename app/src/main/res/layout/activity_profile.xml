@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1E37">
+
+    <!-- Heading -->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT PROFILE"
+        android:textSize="24sp"
+        android:padding="26dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:backgroundTint="@color/darkblue"
+        android:background="#273EAE"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        />
+
+    <!-- Profile Picture -->
+
+    <!-- SAP ID -->
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/man" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name "
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_below="@id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/sapIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SAP ID:    "
+        android:textSize="18sp"
+        android:textColor="#F8EFEF"
+        android:layout_below="@id/profilePicture"
+        android:layout_marginTop="94dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/sapIdValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000000000000"
+        android:textSize="18sp"
+
+        android:textColor="#FDFBFB"
+        android:layout_toEndOf="@id/sapIdLabel"
+        android:layout_alignBaseline="@id/sapIdLabel"/>
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:     "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#EDEDED"
+        android:layout_below="@id/sapIdLabel"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/emailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email of std"
+        android:textSize="18sp"
+        android:textColor="#FAF3F3"
+        android:layout_toEndOf="@id/emailLabel"
+        android:layout_alignBaseline="@id/emailLabel"/>
+
+    <!-- Contact Number -->
+    <TextView
+        android:id="@+id/contactNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number:    "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#F8F3F3"
+        android:layout_below="@id/emailLabel"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/contactNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1111111111"
+        android:textSize="18sp"
+        android:textColor="#ECE6E6"
+        android:layout_toEndOf="@id/contactNumberLabel"
+        android:layout_alignBaseline="@id/contactNumberLabel"/>
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="100dp"
+        android:text="Back"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:onClick="onBackButtonClicked" />
+</RelativeLayout>

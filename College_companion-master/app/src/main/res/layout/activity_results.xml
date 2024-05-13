@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/resultsbg">
+
+    <!-- Welcome Heading -->
+    <TextView
+        android:id="@+id/welcomeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:background="#18772C"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextDesiredGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Goal GPA"
+        android:inputType="numberDecimal"
+        android:textColor="#63C819"
+        android:textSize="16sp"
+        android:backgroundTint="@color/colorPrimary1"
+        android:layout_below="@id/welcomeHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Marks Table -->
+    <TableLayout
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/marksTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDesiredGrade"
+        android:layout_marginTop="24dp">
+
+        <!-- Table Header -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M1 Marks"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- Subject 1 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/subject1Marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8/10"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- Subject 2 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 2"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/subject2Marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9/10"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- Subject 3 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 3"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/subject3Marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6/10"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- Repeat for additional subjects if needed -->
+
+    </TableLayout>
+
+    <!-- GPA Calculation -->
+    <TextView
+        android:id="@+id/textViewGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculated GPA: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/marksTable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Marks Lost Overall -->
+    <TextView
+        android:id="@+id/textViewMarksLost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks Lost Overall: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewGPA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Marks Required for Next Exam -->
+    <TextView
+        android:id="@+id/textViewMarksRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks Required for Goal GPA: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewMarksLost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="#09610D"
+        android:layout_below="@id/textViewMarksRequired"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="#B0E0E6"
+        android:layout_below="@id/textViewMarksRequired"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"/>
+
+
+</RelativeLayout>

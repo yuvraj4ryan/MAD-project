@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reletive2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/txtwhitebg"
+        android:src="@drawable/ic_person_black_24dp" />
+
+    <ImageView
+        android:id="@+id/pfp"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="242dp"
+        android:layout_marginTop="32dp"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/pfpb"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/pfpshow"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/photocamera"
+        android:backgroundTint="@color/white" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/darkblue"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Enter First name"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/fname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkblue"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Enter Last Name"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/lname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkblue"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkblue"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+
+        android:backgroundTint="@color/darkblue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkblue"
+        android:hint="Re Enter Password"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SAP"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/pass2"
+        android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkblue"
+        android:hint="ENTER SAP"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="12dp"
+        android:paddingEnd="12dp"
+
+
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSignup2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/SAP"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="SIGNUP"
+
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2log"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonSignup2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Back To Login"
+
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>

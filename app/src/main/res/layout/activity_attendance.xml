@@ -1,0 +1,537 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4DFDF"
+    >
+
+    <!-- Attendance Heading -->
+    <TextView
+        android:id="@+id/attendanceHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATTENDANCE"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@color/darkblue"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/attendanceText"
+        android:layout_below="@+id/attendanceHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Track your Attendance !"
+        android:textSize="24sp"
+        android:textColor="@color/darkblue"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"/>
+
+    <!-- Attendance Table -->
+    <TableLayout
+        android:id="@+id/attendanceTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendanceHeading"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="125dp"
+        android:padding="25dp">
+
+        <!-- Table Header -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Headers -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Subject"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Headers -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Total Hours"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Headers -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Current Hours"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Headers -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Percentage"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Headers -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Miss More"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Subject 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="MLA"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Total Hours -->
+            <EditText
+                android:id="@+id/editTextSubject1TotalHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Total Hours"
+                android:inputType="number"
+                android:text="30"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Hours -->
+            <EditText
+                android:id="@+id/editTextSubject1CurrentHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Current Hours"
+                android:inputType="number"
+                android:text="21"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Percentage -->
+            <TextView
+                android:id="@+id/subject1CurrentPercentageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0.0%"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Classes You Can Miss -->
+            <TextView
+                android:id="@+id/subject1ClassesYouCanMissTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Subject 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="SAD"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Total Hours -->
+            <EditText
+                android:id="@+id/editTextSubject2TotalHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Total Hours"
+                android:inputType="number"
+                android:text="40"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Hours -->
+            <EditText
+                android:id="@+id/editTextSubject2CurrentHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Current Hours"
+                android:inputType="number"
+                android:text="36"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Percentage -->
+            <TextView
+                android:id="@+id/subject2CurrentPercentageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0.0%"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Classes You Can Miss -->
+            <TextView
+                android:id="@+id/subject2ClassesYouCanMissTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Subject 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="SQA"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Total Hours -->
+            <EditText
+                android:id="@+id/editTextSubject3TotalHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Total Hours"
+                android:inputType="number"
+                android:text="35"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Hours -->
+            <EditText
+                android:id="@+id/editTextSubject3CurrentHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Current Hours"
+                android:inputType="number"
+                android:text="21"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Percentage -->
+            <TextView
+                android:id="@+id/subject3CurrentPercentageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0.0%"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Classes YouCan Miss -->
+            <TextView
+                android:id="@+id/subject3ClassesYouCanMissTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Subject 4 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="DBA"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Total Hours -->
+            <EditText
+                android:id="@+id/editTextSubject4TotalHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Total Hours"
+                android:inputType="number"
+                android:text="40"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Hours -->
+            <EditText
+                android:id="@+id/editTextSubject4CurrentHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Current Hours"
+                android:inputType="number"
+                android:text="30"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Percentage -->
+            <TextView
+                android:id="@+id/subject4CurrentPercentageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0.0%"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Classes You Can Miss -->
+            <TextView
+                android:id="@+id/subject4ClassesYouCanMissTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Subject 5 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="LTLS"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Total Hours -->
+            <EditText
+                android:id="@+id/editTextSubject5TotalHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Total Hours"
+                android:inputType="number"
+                android:text="38"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Hours -->
+            <EditText
+                android:id="@+id/editTextSubject5CurrentHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:gravity="center"
+                android:hint="Current Hours"
+                android:inputType="number"
+                android:text="27"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Current Percentage -->
+            <TextView
+                android:id="@+id/subject5CurrentPercentageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0.0%"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Classes You Can Miss -->
+            <TextView
+                android:id="@+id/subject5ClassesYouCanMissTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Recalculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendanceTable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="CALCULATE"
+        android:textSize="18sp"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="BACK"
+        android:textSize="18sp"
+        android:backgroundTint="@color/darkblue"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+</RelativeLayout>

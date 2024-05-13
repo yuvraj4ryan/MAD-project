@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dashboardbg"
+    android:layout_height="match_parent">
+
+    <!-- Welcome Heading -->
+    <TextView
+        android:id="@+id/welcomeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Dashboard"
+        android:fontFamily="serif"
+        android:textSize="27sp"
+        android:textAlignment="center"
+        android:padding="40dp"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+        android:background="#0F0029"
+        android:textColor="#FFFFFD"/>
+
+    <!-- Top row -->
+    <LinearLayout
+        android:id="@+id/topRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/welcomeHeading">
+
+        <!-- Attendance Button -->
+        <ImageButton
+            android:id="@+id/attendanceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/attendance"
+            android:background="@android:color/transparent"
+            android:contentDescription="Attendance"/>
+
+        <!-- Timetable Button -->
+        <ImageButton
+            android:id="@+id/timetableButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:src="@drawable/timetable"
+            android:background="@android:color/transparent"
+            android:contentDescription="Timetable"/>
+    </LinearLayout>
+
+    <!-- Bottom row -->
+    <LinearLayout
+        android:id="@+id/bottomRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/topRow">
+
+        <!-- Assignment Button -->
+        <ImageButton
+            android:id="@+id/assignmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/assignments"
+            android:background="@android:color/transparent"
+            android:contentDescription="Assignment"/>
+
+        <!-- Results Button -->
+        <ImageButton
+            android:id="@+id/resultsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/results"
+            android:background="@android:color/transparent"
+            android:contentDescription="Results"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

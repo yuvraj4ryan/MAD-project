@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CED3EC"
+    android:id="@+id/relativeLayout">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/Theme.AppCompat.Light" />
+
+    <!-- Welcome Heading -->
+
+    <!-- GridView for ImageButtons -->
+    <TextView
+        android:id="@+id/welcomeHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="-67dp"
+        android:background="#131A40"
+        android:backgroundTint="#262F67"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="30dp"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+    <GridView
+        android:id="@+id/imageButtonsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeHeading"
+        android:padding="16dp"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

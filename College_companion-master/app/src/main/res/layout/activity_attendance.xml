@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#D9EAD3">
+
+    <!-- Attendance Table -->
+    <TableLayout
+        android:id="@+id/attendanceTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <!-- Table Header -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Miss More"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!-- Subject 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 1"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!-- Add EditTexts for subject 1 (Total, Current, Miss More) -->
+            <EditText
+                android:id="@+id/editTextSubject1Total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject1Current"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject1MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+        </TableRow>
+
+        <!-- Subject 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 2"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!-- Add EditTexts for subject 2 (Total, Current, Miss More) -->
+            <EditText
+                android:id="@+id/editTextSubject2Total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject2Current"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject2MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+        </TableRow>
+
+        <!-- Subject 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subject 3"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <!-- Add EditTexts for subject 3 (Total, Current, Miss More) -->
+            <EditText
+                android:id="@+id/editTextSubject3Total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject3Current"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/editTextSubject3MissMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:backgroundTint="@android:color/white"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Recalculate Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recalculate"
+        android:layout_below="@id/attendanceTable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:onClick="onRecalculateClick"/>
+</RelativeLayout>
